@@ -279,7 +279,8 @@ h2 {
     overflow: hidden;
 }
 
-.profile img {
+.profile img,
+.category-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -322,7 +323,7 @@ h5 {
 
 .card {
     flex: 1;
-    flex-basis: 300px;
+    flex-basis: 250px;
     background: var(--rose-white);
     height: 70vh;
     border-radius: 5rem;
@@ -356,10 +357,59 @@ h5 {
     color: var(--fresh-mint);
 }
 
+.product .para ,
+.product h3{
+    color: var(--pure-white);
+}
 
+.icon-btn{
+    width: 3.5rem;
+    aspect-ratio: 1;
+    outline: .4rem solid var(--pure-white);
+    background: var(--banana-skin);
+    color: var(--fresh-mint);
+    font-size: 2rem;
+    border-radius: 100vw;
+    text-align: center;
+    line-height: 3.5rem;
+}
 
+.category{
+    position: relative;
+}
+.category .cylinder-inner{
+    background: var(--dark-fresh-mint);
+}
 
+.category .cylinder-inner h4{
+    color: var(--pure-white);
+}
 
+.m-top{
+    margin-top: 3rem;
+}
+
+.category-image{
+    width: 8rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50% , -10%);
+    box-shadow: rgba(0, 0, 0, 0.244) 0 2rem 6rem 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all.3s ease-in-out;
+}
+
+.category .cylinder-inner:hover ~ .category-image{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50% , -50%);
+
+}
 
 
 
@@ -467,7 +517,9 @@ h5 {
         justify-content: center;
 
     }
-
+    .into-a-world{
+        font-size: 4rem !important;
+    }
     .cylinder-inner h4 {
         font-size: 2rem;
     }
@@ -497,5 +549,13 @@ h5 {
     .By-Sleek h3 {
         font-size: 3.7rem;
         flex-wrap: wrap;
+    }
+
+    .card-container{
+        margin-top: 1rem;
+    }
+
+    .category .cylinder-inner{
+        justify-content: space-between;
     }
 }
