@@ -133,6 +133,8 @@ img {
     transform: translate(-50%, -50%) rotate(-20deg);
     width: 54vw;
     transition: .3s ease-in-out;
+    /* pointer-events: none; */
+    z-index: 4;
 }
 
 .shoe:hover {
@@ -372,13 +374,24 @@ h5 {
     border-radius: 100vw;
     text-align: center;
     line-height: 3.5rem;
+    transition: all .3s ease-in-out ;
+}
+.category .cylinder-inner:hover .icon-btn{
+    transform: rotate(-45deg);
+    background: var(--fresh-mint);
+    color: var(--banana-skin);
 }
 
+.category .cylinder-inner:hover h4{
+    color: var(--fresh-mint);
+}
 .category{
     position: relative;
+    margin-bottom: 3rem;
 }
 .category .cylinder-inner{
     background: var(--dark-fresh-mint);
+    transition: .3s ease-in-out;
 }
 
 .category .cylinder-inner h4{
@@ -411,13 +424,72 @@ h5 {
 
 }
 
+.category .cylinder-inner:hover{
+    background: var(--banana-skin);
+}
 
+.into-image{
+    width: 100%;
+    height: 85vh;
+    background-image: url("assets/shoe\ bg-min.jpeg");
+    background-repeat: no-repeat;
+    border-radius: 5rem;
+    background-size: cover;
+    background-position: bottom;
+    justify-content: center;
+}
 
+.into-image .btn{
+    background: var(--banana-skin);
+    color: var(--fresh-mint);
+    transition: all .3s ease-in-out;
+}
 
+.into-image .btn:hover{
+    background: orangered;
+    color: var(--pure-white);
+}
 
+.contact{
+    width: 80%;
+    margin: auto;
+}
 
+.contact .icon-btn{
+    background: var(--fresh-mint);
+    color: var(--banana-skin);
+}
 
+.footer-list{
+    justify-content: center;
+    min-height: 17vh;
+    gap: 1rem;
+}
 
+.footer-link{
+    background: var(--rose-white);
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    color: var(--fresh-mint);
+    transition: all .3s ease-in-out;
+}
+
+.footer-link:hover{
+    background: var(--fresh-mint);
+    color: var(--pure-white);
+}
+
+.copyright{
+    padding-block: 1rem;
+}
+
+.copyright p{
+    color: var(--fresh-mint);
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+}
 
 
 
@@ -557,5 +629,14 @@ h5 {
 
     .category .cylinder-inner{
         justify-content: space-between;
+    }
+
+    .category-image{
+        width: 5rem;
+        left: 55%;
+    }
+
+    .into-image{
+        height: 50vh;
     }
 }
