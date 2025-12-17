@@ -664,7 +664,7 @@ h5 {
 
     .contact-image{
         width: 10rem;
-        left: 36%;
+        left: 35%;
         transform: translateX(-50%) ;
         transform: rotate(-20deg);
     }
