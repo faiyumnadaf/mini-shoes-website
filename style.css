@@ -453,11 +453,28 @@ h5 {
 .contact{
     width: 80%;
     margin: auto;
+    position: relative;
 }
 
 .contact .icon-btn{
     background: var(--fresh-mint);
     color: var(--banana-skin);
+}
+
+.contact-image{
+    position: absolute;
+    width: 12rem;
+    left: 50%;
+    top: 170px;
+    transition: all .3s ease-in-out;
+}
+
+.contact:hover .contact-image{
+    top: 3px;
+}
+
+.contact:hover .icon-btn{
+    transform: rotate(-45deg);
 }
 
 .footer-list{
@@ -638,5 +655,16 @@ h5 {
 
     .into-image{
         height: 50vh;
+    }
+
+    .contact{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .contact-image{
+        width: 10rem;
+        left: 55%;
+        transform: translateX(-50%);
     }
 }
