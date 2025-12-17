@@ -663,8 +663,8 @@ h5 {
     }
 
     .contact-image{
-        width: 8rem;
-        left: 35%;
+        width: 10rem;
+        left: 38%;
         transform: translateX(-50%) ;
         transform: rotate(-20deg);
     }
